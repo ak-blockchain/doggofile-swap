@@ -1,0 +1,221 @@
+:root {
+    --pageBg: #020405;
+    --redBg: #4C65BB;
+    --redBgTrans: #0d0828;
+    --redText: #020405;
+    --ourwhite: #020405;
+    --gray: #C0C0C0; 
+    --blue: #2674CA;
+
+}
+
+.bg {
+    background-image: url('assets/bg.jpg');
+    margin: 0px; 
+    padding: 0px;
+}
+
+body {
+    background-color: var(--pageBg);
+    font-family:'Courier New', Courier, monospace; 
+    color: white; 
+}
+.bw {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*
+    Boxes
+*/
+#main_border {
+    position: absolute; 
+    top: 140px;
+    left: 50%;
+    transform: translatex(-50%);
+    border: 1px solid;
+    width: 390px;
+    height: 450px;
+    border-radius: 10px;
+    border: 0px solid var(--border);
+    box-shadow: 0.5px 0.5px 20px 0px var(--redBg);
+    background-image: linear-gradient(to bottom right, #49161F, #314189); 
+
+}
+#main_fill {
+    position: absolute; 
+    top: 15px;
+    left: 50%;
+    transform: translatex(-50%);
+    border: 1px solid;
+    width: 360px;
+    height: 420px;
+    border: 0px solid var(--border);
+    background-color: var(--redBgTrans);
+}
+.buyRect {
+    position: absolute;
+    width: 330px;
+    height: 90px;
+    border: 0px solid var(--border);
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #49161F, #314189); 
+    left: 50%;
+    transform:translateX(-50%);
+}
+.top {
+    top: 20px;
+}
+.bottom {
+    top: 160px;
+}
+.swap {
+    top: 280px;
+    background-color: var(--pageBg);
+    font-size: 1.3em;
+    vertical-align:middle;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    height: 45px; 
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid var(--redBg); 
+}
+.swap:hover {
+    opacity: 0.8;
+    cursor: pointer; 
+}
+
+#from_text {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    font-size: 1em;
+    color: white;
+    font-weight: 500; 
+}
+#to_text {
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    font-size: 1em;
+    color: white;
+    font-weight: 500; 
+}
+.balance{
+    position: absolute;
+    right: 10px;
+    top: -7px;
+    font-size: 0.9em;
+    color: white; 
+    font-weight: 100; 
+}
+
+
+#swapTriangle {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width: 30px;
+    top: 120px;
+}
+#errorMessage {
+    position: absolute;
+    left: 50%;
+    width: fit-content;
+    transform: translateX(-50%);
+    top: 340px; 
+    font-weight: 200;
+    font-size: 1em; 
+    color: var(--redText);
+    
+}
+.numberInput {
+    position: absolute;
+    background-color: transparent;
+    font-size: 1.7em;
+    border: 0px solid white;
+    top: 35px;
+    left: 10px;
+    color: white;
+    outline: none;
+}
+#caInput {
+    top: 40px;
+    font-size: 1.5em;
+}
+
+.coinRect {
+    position: absolute;
+    width: 80px;
+    height: 27px; 
+    border: 0px solid white; 
+    border-radius: 50px;
+    color: white; 
+    z-index: 5; 
+}
+.coinRect:hover {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+.disabledRect {
+    position: absolute;
+    width: 76px;
+    height: 23px; 
+    border: 0px solid white; 
+    border-radius: 50px;
+    border: 2px solid rgb(147, 146, 146);
+    color: rgb(147, 146, 146);
+    z-index: 5; 
+    background-color: transparent !important;
+}
+.disabledRect:hover {
+    opacity: 0.8 !important; 
+    cursor: pointer !important; 
+}
+
+#ethRect {
+    left: 80px;
+    top: 32px;
+    background-color: transparent;
+}
+#usdcRect {
+    left: 160px;
+    top: 59px;
+    background-color: var(--blue)
+}
+#usdceRect {
+    top: 28px;
+    left: 242px;
+    background-color: transparent;
+    background-color: var(--blue)
+}
+
+.tokenText {
+    position: absolute;
+    left: 25px;
+    top: calc(50% - 23px);
+    font-size: 1.2em;
+    font-weight: 100; 
+}
+.tokenText:hover {
+    cursor: pointer !important; 
+}
+
+.tokenIcon {
+    position: absolute;
+    width: 28px;
+    right: 65px;
+    left: -1px;
+    top: calc(50% - 14px);
+}
+.ethIcon {
+    position: absolute;
+    width: 30px;
+    left: 0px;
+    top: calc(50% - 14px);
+}
+
+  
